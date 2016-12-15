@@ -1,11 +1,15 @@
 //
-//  YUENMediator.m
+//  YUENMediator+Root.m
 //  AggregateTest
 //
-//  Created by 袁峥 on 16/12/14.
+//  Created by 袁峥 on 16/12/15.
 //  Copyright © 2016年 Yuen. All rights reserved.
 //
-#import "YUENMediator.h"
+
+#import "YUENMediator+Root.h"
+#import "RootTableViewController.h"
+#import "RootNavigationController.h"
+
 
 @interface YUENMediator()
 @property (nonnull, nonatomic, strong) NSHashTable *p_weakVCs;
@@ -57,6 +61,15 @@
     
     return nil;
 }
+
+@end
+
+
+
+
+
+
+@implementation YUENMediator (Root)
 #pragma mark _________________________ UI
 /**
  * @Description 配置启动时的初始视图
@@ -71,9 +84,7 @@
  */
 - (void)configureLandingPage
 {
-    UIViewController *__rootVC = [UIViewController new];
-    __rootVC.view.backgroundColor = [UIColor redColor];
-    [UIApplication sharedApplication].keyWindow.rootViewController = __rootVC;
+    [self presentRootViewController];
 }
 
 /**
@@ -81,6 +92,8 @@
  */
 - (void)presentRootViewController
 {
-    
+    RootTableViewController *__rootVC = [RootTableViewController new];
+    RootNavigationController *__rootNavi = [[RootNavigationController alloc] initWithRootViewController:__rootVC];
+    [UIApplication sharedApplication].keyWindow.rootViewController = __rootNavi;
 }
 @end

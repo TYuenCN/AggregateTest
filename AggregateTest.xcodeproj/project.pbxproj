@@ -10,13 +10,14 @@
 		0EE1689CF9D3F1C14598BDE6 /* libPods-AggregateTestUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B7B0D7AF9EDA4F5F0A30002 /* libPods-AggregateTestUITests.a */; };
 		94BFA6531E0169CB006AB728 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BFA6521E0169CB006AB728 /* main.m */; };
 		94BFA6561E0169CB006AB728 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BFA6551E0169CB006AB728 /* AppDelegate.m */; };
-		94BFA6591E0169CB006AB728 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BFA6581E0169CB006AB728 /* ViewController.m */; };
 		94BFA65E1E0169CB006AB728 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94BFA65D1E0169CB006AB728 /* Assets.xcassets */; };
 		94BFA6611E0169CB006AB728 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94BFA65F1E0169CB006AB728 /* LaunchScreen.storyboard */; };
 		94BFA66C1E0169CB006AB728 /* AggregateTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BFA66B1E0169CB006AB728 /* AggregateTestTests.m */; };
 		94BFA6771E0169CB006AB728 /* AggregateTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BFA6761E0169CB006AB728 /* AggregateTestUITests.m */; };
 		94BFA68A1E016E08006AB728 /* JSPatchTestRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BFA6891E016E08006AB728 /* JSPatchTestRootVC.m */; };
-		94BFA68E1E016FA1006AB728 /* YUENMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BFA68D1E016FA1006AB728 /* YUENMediator.m */; };
+		94BFA6911E023853006AB728 /* RootTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BFA6901E023853006AB728 /* RootTableViewController.m */; };
+		94BFA6941E0238AD006AB728 /* YUENMediator+Root.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BFA6931E0238AD006AB728 /* YUENMediator+Root.m */; };
+		94BFA6971E023DA6006AB728 /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BFA6961E023DA6006AB728 /* RootNavigationController.m */; };
 		9FF52AFBC7F6FDB194C488E8 /* libPods-AggregateTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C47751CC6309678DDB008A /* libPods-AggregateTest.a */; };
 		A5A48B1C1EAA983560C26556 /* libPods-AggregateTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90BDE710DD41EEF79FF2B8AF /* libPods-AggregateTestTests.a */; };
 /* End PBXBuildFile section */
@@ -48,8 +49,6 @@
 		94BFA6521E0169CB006AB728 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		94BFA6541E0169CB006AB728 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		94BFA6551E0169CB006AB728 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		94BFA6571E0169CB006AB728 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		94BFA6581E0169CB006AB728 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		94BFA65D1E0169CB006AB728 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94BFA6601E0169CB006AB728 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94BFA6621E0169CB006AB728 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,7 +61,12 @@
 		94BFA6881E016E08006AB728 /* JSPatchTestRootVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPatchTestRootVC.h; sourceTree = "<group>"; };
 		94BFA6891E016E08006AB728 /* JSPatchTestRootVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPatchTestRootVC.m; sourceTree = "<group>"; };
 		94BFA68C1E016FA1006AB728 /* YUENMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUENMediator.h; sourceTree = "<group>"; };
-		94BFA68D1E016FA1006AB728 /* YUENMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUENMediator.m; sourceTree = "<group>"; };
+		94BFA68F1E023853006AB728 /* RootTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTableViewController.h; sourceTree = "<group>"; };
+		94BFA6901E023853006AB728 /* RootTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTableViewController.m; sourceTree = "<group>"; };
+		94BFA6921E0238AD006AB728 /* YUENMediator+Root.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YUENMediator+Root.h"; sourceTree = "<group>"; };
+		94BFA6931E0238AD006AB728 /* YUENMediator+Root.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YUENMediator+Root.m"; sourceTree = "<group>"; };
+		94BFA6951E023DA6006AB728 /* RootNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootNavigationController.h; sourceTree = "<group>"; };
+		94BFA6961E023DA6006AB728 /* RootNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootNavigationController.m; sourceTree = "<group>"; };
 		DBFF50BC38358F115A8A8F83 /* Pods-AggregateTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AggregateTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-AggregateTest/Pods-AggregateTest.release.xcconfig"; sourceTree = "<group>"; };
 		DEF1C9F57CFB1C400D336229 /* Pods-AggregateTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AggregateTestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AggregateTestUITests/Pods-AggregateTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EB2DC07C213859147A1FD22D /* Pods-AggregateTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AggregateTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AggregateTestTests/Pods-AggregateTestTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -150,8 +154,10 @@
 				94BFA6851E016D6E006AB728 /* 3rd */,
 				94BFA6541E0169CB006AB728 /* AppDelegate.h */,
 				94BFA6551E0169CB006AB728 /* AppDelegate.m */,
-				94BFA6571E0169CB006AB728 /* ViewController.h */,
-				94BFA6581E0169CB006AB728 /* ViewController.m */,
+				94BFA6951E023DA6006AB728 /* RootNavigationController.h */,
+				94BFA6961E023DA6006AB728 /* RootNavigationController.m */,
+				94BFA68F1E023853006AB728 /* RootTableViewController.h */,
+				94BFA6901E023853006AB728 /* RootTableViewController.m */,
 				94BFA65D1E0169CB006AB728 /* Assets.xcassets */,
 				94BFA65F1E0169CB006AB728 /* LaunchScreen.storyboard */,
 				94BFA6621E0169CB006AB728 /* Info.plist */,
@@ -205,7 +211,8 @@
 			isa = PBXGroup;
 			children = (
 				94BFA68C1E016FA1006AB728 /* YUENMediator.h */,
-				94BFA68D1E016FA1006AB728 /* YUENMediator.m */,
+				94BFA6921E0238AD006AB728 /* YUENMediator+Root.h */,
+				94BFA6931E0238AD006AB728 /* YUENMediator+Root.m */,
 			);
 			path = Mediator;
 			sourceTree = "<group>";
@@ -502,10 +509,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				94BFA68A1E016E08006AB728 /* JSPatchTestRootVC.m in Sources */,
-				94BFA6591E0169CB006AB728 /* ViewController.m in Sources */,
-				94BFA68E1E016FA1006AB728 /* YUENMediator.m in Sources */,
+				94BFA6971E023DA6006AB728 /* RootNavigationController.m in Sources */,
+				94BFA6911E023853006AB728 /* RootTableViewController.m in Sources */,
 				94BFA6561E0169CB006AB728 /* AppDelegate.m in Sources */,
 				94BFA6531E0169CB006AB728 /* main.m in Sources */,
+				94BFA6941E0238AD006AB728 /* YUENMediator+Root.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
