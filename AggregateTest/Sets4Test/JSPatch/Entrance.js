@@ -86,9 +86,8 @@ vc.performSelector_withObject( 'callFromSelectorWithObject:', "Arg String" );
 // JS 创建新类，带有 Protocol 实现
 //
 // 可以在定义时让一个类实现某些 Protocol 接口，写法跟 OC 一样
-defineClass("JPViewController: UIViewController<UIScrollViewDelegate, UITextViewDelegate>", {
-            
-            })
+//
+//defineClass("JPViewController: UIViewController<UIScrollViewDelegate, UITextViewDelegate>", { })
 
 //
 //
