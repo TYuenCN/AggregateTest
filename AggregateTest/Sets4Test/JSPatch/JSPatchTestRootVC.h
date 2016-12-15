@@ -14,7 +14,7 @@
 - (void)callWithArg1:(NSString *_Nullable)arg1 arg2:(NSString *_Nullable)arg2;
 - (void)callFromSelectorWithObject:(id _Nullable)obj;
 - (void)testNull:(NSNull *_Nullable)null;
-- (NSArray *_Nullable)data;
+- (NSArray *_Nullable)array;
 - (NSMutableDictionary *_Nullable)dict;
 - (void)request:(void(^_Nullable)(NSString *_Nullable content, BOOL success))callback;
 - (void(^_Nullable)(NSDictionary *_Nullable arg))genBlock;
