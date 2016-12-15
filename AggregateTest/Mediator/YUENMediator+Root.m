@@ -9,6 +9,7 @@
 #import "YUENMediator+Root.h"
 #import "RootTableViewController.h"
 #import "RootNavigationController.h"
+#import "JSPatchTestRootVC.h"
 
 
 @interface YUENMediator()
@@ -95,5 +96,20 @@
     RootTableViewController *__rootVC = [RootTableViewController new];
     RootNavigationController *__rootNavi = [[RootNavigationController alloc] initWithRootViewController:__rootVC];
     [UIApplication sharedApplication].keyWindow.rootViewController = __rootNavi;
+}
+
+
+
+/**
+ * 展现::JSPatch 测试页面
+ */
+- (void)presentJSPatchTestVC
+{
+    UIViewController *__vc4RootNavi = [self queryVCWithClass:[RootNavigationController class]];
+    if ([__vc4RootNavi isKindOfClass:[RootNavigationController class]]) {
+        RootNavigationController *__rootNavi = (RootNavigationController *)__vc4RootNavi;
+        JSPatchTestRootVC *__toVC = [JSPatchTestRootVC new];
+        [__rootNavi pushViewController:__toVC animated:true];
+    }
 }
 @end

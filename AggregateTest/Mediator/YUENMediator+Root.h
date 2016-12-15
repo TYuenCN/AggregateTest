@@ -50,7 +50,12 @@
 - (void)configureStartup;
 
 /**
- * @Description 展现初始根视图
+ * 展现初始根视图
  */
 - (void)presentRootViewController;
+
+/**
+ * 展现::JSPatch 测试页面
+ */
+- (void)presentJSPatchTestVC;
 @end

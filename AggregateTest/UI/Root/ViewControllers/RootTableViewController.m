@@ -7,22 +7,33 @@
 //
 
 #import "RootTableViewController.h"
+#import "RootTableViewCell.h"
+#import "YUENMediator.h"
 
 @interface RootTableViewController ()
-
+@property (nullable, nonatomic, strong) NSArray *arr4CellInfo;
 @end
 
 @implementation RootTableViewController
 
 
 #pragma mark _________________________________________ Lifecycle
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.title = @"Test";
+        self.arr4CellInfo = @[@[@"JSPatch", @"测试 JSPatch"]];
+    }
+    return self;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     //
     //
     // Configure::TableView
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"RootTableViewCellIdentifier"];
+    [self.tableView registerClass:[RootTableViewCell class] forCellReuseIdentifier:@"RootTableViewCellIdentifier"];
     self.tableView.tableHeaderView = [UIView new];
     self.tableView.tableFooterView = [UIView new];
 }
@@ -42,12 +53,24 @@
     return 1;
 }
 
-#pragma mark _________________________________________ <<UITableViewDelegate>>
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *__cell = [tableView dequeueReusableCellWithIdentifier:@"RootTableViewCellIdentifier" forIndexPath:indexPath];
-    __cell.textLabel.text = @"JSPatch";
+    __cell.textLabel.text = [[self.arr4CellInfo objectAtIndex:indexPath.row] objectAtIndex:0];
+    __cell.detailTextLabel.text = [[self.arr4CellInfo objectAtIndex:indexPath.row] objectAtIndex:1];
     return __cell;
 }
 
+#pragma mark _________________________________________ <<UITableViewDelegate>>
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:true];
+    
+    //
+    //
+    // Present
+    if (indexPath.row == 0) {
+        [[YUENMediator sharedInstance] presentJSPatchTestVC];
+    }
+}
 @end

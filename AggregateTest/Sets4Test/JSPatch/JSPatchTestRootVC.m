@@ -15,9 +15,21 @@
 
 @implementation JSPatchTestRootVC
 
+#pragma mark _________________________________________ Lifecycle
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.title = @"JSPatch";
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self changeBg];
+    [self configureSubviews];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -25,14 +37,39 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark _________________________________________ Configure
+- (void)configureSubviews
+{
+    //
+    //
+    // Button::Change Bg
+    UIButton *__btn4ChangeBg = [UIButton buttonWithType:UIButtonTypeSystem];
+    [__btn4ChangeBg setTitle:@"Change Bg" forState:UIControlStateNormal];
+    [__btn4ChangeBg addTarget:self action:@selector(btn4ChangeBg:) forControlEvents:UIControlEventTouchUpInside];
+    __btn4ChangeBg.translatesAutoresizingMaskIntoConstraints = false;
+    [self.view addSubview:__btn4ChangeBg];
+    [__btn4ChangeBg addConstraint:[NSLayoutConstraint constraintWithItem:__btn4ChangeBg attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:42.0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:__btn4ChangeBg attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTop multiplier:1.0 constant:10.0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:__btn4ChangeBg attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeft multiplier:1.0 constant:8.0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:__btn4ChangeBg attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeRight multiplier:1.0 constant:-8.0]];
 }
-*/
+#pragma mark _________________________________________ Methods
+- (void)changeBg
+{
+    self.view.backgroundColor = [UIColor whiteColor];
+}
 
+#pragma mark _________________________________________ Actions
+- (void)btn4ChangeBg:(UIButton *)btn
+{
+    [JPEngine startEngine];
+    NSString *__jsPath4ChangeBg = [[NSBundle mainBundle] pathForResource:@"ChangeBg" ofType:@"js"];
+    NSString *__script = [NSString stringWithContentsOfFile:__jsPath4ChangeBg encoding:NSUTF8StringEncoding error:nil];
+    [JPEngine evaluateScript:__script];
+    
+    //
+    //
+    //
+    [self changeBg];
+}
 @end

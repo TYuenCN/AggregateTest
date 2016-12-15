@@ -7,4 +7,5 @@
 //
 
 
+#import "UIViewController+MediatorWeafRefRegister.h"
 #import "YUENMediator+Root.h"
