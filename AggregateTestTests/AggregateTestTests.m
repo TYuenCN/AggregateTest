@@ -7,6 +7,9 @@
 //
 
 #import <XCTest/XCTest.h>
+#import <objc/runtime.h>
+#import "TestMemoryBaseClass.h"
+#import "TestMemoryConcreteClass.h"
 
 @interface AggregateTestTests : XCTestCase
 
@@ -34,6 +37,11 @@
     [self measureBlock:^{
         // Put the code you want to measure the time of here.
     }];
+}
+
+- (void)testMemory{
+    NSLog(@"⭕️%lu", class_getInstanceSize([TestMemoryBaseClass class]));
+    NSLog(@"⭕️%lu", class_getInstanceSize([TestMemoryConcreteClass class]));
 }
 
 @end

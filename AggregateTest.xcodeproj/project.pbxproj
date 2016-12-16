@@ -22,6 +22,8 @@
 		94BFA6B51E024917006AB728 /* RootTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BFA6B21E024917006AB728 /* RootTableViewController.m */; };
 		94BFA6BB1E0249AC006AB728 /* RootTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BFA6BA1E0249AC006AB728 /* RootTableViewCell.m */; };
 		94BFA6BD1E025B1A006AB728 /* Entrance.js in Resources */ = {isa = PBXBuildFile; fileRef = 94BFA6BC1E025B1A006AB728 /* Entrance.js */; };
+		94BFA6C11E03E31C006AB728 /* TestMemoryBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BFA6C01E03E31C006AB728 /* TestMemoryBaseClass.m */; };
+		94BFA6C41E03E613006AB728 /* TestMemoryConcreteClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BFA6C31E03E613006AB728 /* TestMemoryConcreteClass.m */; };
 		9FF52AFBC7F6FDB194C488E8 /* libPods-AggregateTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C47751CC6309678DDB008A /* libPods-AggregateTest.a */; };
 		A5A48B1C1EAA983560C26556 /* libPods-AggregateTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90BDE710DD41EEF79FF2B8AF /* libPods-AggregateTestTests.a */; };
 /* End PBXBuildFile section */
@@ -78,6 +80,10 @@
 		94BFA6B91E0249AC006AB728 /* RootTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTableViewCell.h; sourceTree = "<group>"; };
 		94BFA6BA1E0249AC006AB728 /* RootTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTableViewCell.m; sourceTree = "<group>"; };
 		94BFA6BC1E025B1A006AB728 /* Entrance.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Entrance.js; sourceTree = "<group>"; };
+		94BFA6BF1E03E31C006AB728 /* TestMemoryBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMemoryBaseClass.h; sourceTree = "<group>"; };
+		94BFA6C01E03E31C006AB728 /* TestMemoryBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMemoryBaseClass.m; sourceTree = "<group>"; };
+		94BFA6C21E03E613006AB728 /* TestMemoryConcreteClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMemoryConcreteClass.h; sourceTree = "<group>"; };
+		94BFA6C31E03E613006AB728 /* TestMemoryConcreteClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMemoryConcreteClass.m; sourceTree = "<group>"; };
 		DBFF50BC38358F115A8A8F83 /* Pods-AggregateTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AggregateTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-AggregateTest/Pods-AggregateTest.release.xcconfig"; sourceTree = "<group>"; };
 		DEF1C9F57CFB1C400D336229 /* Pods-AggregateTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AggregateTestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AggregateTestUITests/Pods-AggregateTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EB2DC07C213859147A1FD22D /* Pods-AggregateTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AggregateTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AggregateTestTests/Pods-AggregateTestTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -204,6 +210,7 @@
 		94BFA6841E016D5D006AB728 /* Sets4Test */ = {
 			isa = PBXGroup;
 			children = (
+				94BFA6BE1E03E2FF006AB728 /* Memory */,
 				94BFA6871E016DC4006AB728 /* JSPatch */,
 			);
 			path = Sets4Test;
@@ -282,6 +289,17 @@
 				94BFA6BA1E0249AC006AB728 /* RootTableViewCell.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		94BFA6BE1E03E2FF006AB728 /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+				94BFA6BF1E03E31C006AB728 /* TestMemoryBaseClass.h */,
+				94BFA6C01E03E31C006AB728 /* TestMemoryBaseClass.m */,
+				94BFA6C21E03E613006AB728 /* TestMemoryConcreteClass.h */,
+				94BFA6C31E03E613006AB728 /* TestMemoryConcreteClass.m */,
+			);
+			path = Memory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -569,8 +587,10 @@
 			files = (
 				94BFA68A1E016E08006AB728 /* JSPatchTestRootVC.m in Sources */,
 				94BFA69E1E024740006AB728 /* YUENSwizzleMethodUtil.m in Sources */,
+				94BFA6C11E03E31C006AB728 /* TestMemoryBaseClass.m in Sources */,
 				94BFA6BB1E0249AC006AB728 /* RootTableViewCell.m in Sources */,
 				94BFA6B41E024917006AB728 /* RootNavigationController.m in Sources */,
+				94BFA6C41E03E613006AB728 /* TestMemoryConcreteClass.m in Sources */,
 				94BFA69A1E0246E9006AB728 /* UIViewController+MediatorWeafRefRegister.m in Sources */,
 				94BFA6561E0169CB006AB728 /* AppDelegate.m in Sources */,
 				94BFA6531E0169CB006AB728 /* main.m in Sources */,
