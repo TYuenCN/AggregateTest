@@ -23,7 +23,8 @@
     self = [super init];
     if (self) {
         self.title = @"Test";
-        self.arr4CellInfo = @[@[@"JSPatch", @"测试 JSPatch"]];
+        self.arr4CellInfo = @[@[@"JSPatch", @"测试 JSPatch"],
+                              @[@"Architecture MVP", @"测试 MVP"]];
     }
     return self;
 }
@@ -50,7 +51,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    return [self.arr4CellInfo count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -69,8 +70,11 @@
     //
     //
     // Present
-    if (indexPath.row == 0) {
+    if ([[[self.arr4CellInfo objectAtIndex:indexPath.row] objectAtIndex:0] isEqualToString:@"JSPatch"]) {
         [[YUENMediator sharedInstance] presentJSPatchTestVC];
+    }
+    else if ([[[self.arr4CellInfo objectAtIndex:indexPath.row] objectAtIndex:0] isEqualToString:@"Architecture MVP"]) {
+        [[YUENMediator sharedInstance] presentArchitectureMVP];
     }
 }
 @end

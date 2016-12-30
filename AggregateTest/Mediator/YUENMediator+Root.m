@@ -10,6 +10,7 @@
 #import "RootTableViewController.h"
 #import "RootNavigationController.h"
 #import "JSPatchTestRootVC.h"
+#import "ArchitectureMVPRootVC.h"
 
 
 @interface YUENMediator()
@@ -109,6 +110,21 @@
     if ([__vc4RootNavi isKindOfClass:[RootNavigationController class]]) {
         RootNavigationController *__rootNavi = (RootNavigationController *)__vc4RootNavi;
         JSPatchTestRootVC *__toVC = [JSPatchTestRootVC new];
+        [__rootNavi pushViewController:__toVC animated:true];
+    }
+}
+
+
+
+/**
+ * 展现::ArchitectureMVP 测试页面
+ */
+- (void)presentArchitectureMVP
+{
+    UIViewController *__vc4RootNavi = [self queryVCWithClass:[RootNavigationController class]];
+    if ([__vc4RootNavi isKindOfClass:[RootNavigationController class]]) {
+        RootNavigationController *__rootNavi = (RootNavigationController *)__vc4RootNavi;
+        ArchitectureMVPRootVC *__toVC = [ArchitectureMVPRootVC new];
         [__rootNavi pushViewController:__toVC animated:true];
     }
 }

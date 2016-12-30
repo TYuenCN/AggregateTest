@@ -21,9 +21,13 @@
 		94BFA6B41E024917006AB728 /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BFA6B01E024917006AB728 /* RootNavigationController.m */; };
 		94BFA6B51E024917006AB728 /* RootTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BFA6B21E024917006AB728 /* RootTableViewController.m */; };
 		94BFA6BB1E0249AC006AB728 /* RootTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BFA6BA1E0249AC006AB728 /* RootTableViewCell.m */; };
-		94BFA6BD1E025B1A006AB728 /* Entrance.js in Resources */ = {isa = PBXBuildFile; fileRef = 94BFA6BC1E025B1A006AB728 /* Entrance.js */; };
+		94BFA6BD1E025B1A006AB728 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 94BFA6BC1E025B1A006AB728 /* main.js */; };
 		9FF52AFBC7F6FDB194C488E8 /* libPods-AggregateTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C47751CC6309678DDB008A /* libPods-AggregateTest.a */; };
 		A5A48B1C1EAA983560C26556 /* libPods-AggregateTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90BDE710DD41EEF79FF2B8AF /* libPods-AggregateTestTests.a */; };
+		EC961D3A1E1657FA0014C7B1 /* ArchitectureMVPRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC961D391E1657FA0014C7B1 /* ArchitectureMVPRootVC.m */; };
+		ECAA07101E16963400A8F927 /* MVPTestDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAA070F1E16963400A8F927 /* MVPTestDataModel.m */; };
+		ECAA07131E16967C00A8F927 /* MVPTestPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAA07121E16967C00A8F927 /* MVPTestPresenter.m */; };
+		ECAA07161E16970500A8F927 /* MVPTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAA07151E16970500A8F927 /* MVPTestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,10 +81,19 @@
 		94BFA6B21E024917006AB728 /* RootTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTableViewController.m; sourceTree = "<group>"; };
 		94BFA6B91E0249AC006AB728 /* RootTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTableViewCell.h; sourceTree = "<group>"; };
 		94BFA6BA1E0249AC006AB728 /* RootTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTableViewCell.m; sourceTree = "<group>"; };
-		94BFA6BC1E025B1A006AB728 /* Entrance.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Entrance.js; sourceTree = "<group>"; };
+		94BFA6BC1E025B1A006AB728 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
 		DBFF50BC38358F115A8A8F83 /* Pods-AggregateTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AggregateTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-AggregateTest/Pods-AggregateTest.release.xcconfig"; sourceTree = "<group>"; };
 		DEF1C9F57CFB1C400D336229 /* Pods-AggregateTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AggregateTestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AggregateTestUITests/Pods-AggregateTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EB2DC07C213859147A1FD22D /* Pods-AggregateTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AggregateTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AggregateTestTests/Pods-AggregateTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EC961D381E1657FA0014C7B1 /* ArchitectureMVPRootVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchitectureMVPRootVC.h; sourceTree = "<group>"; };
+		EC961D391E1657FA0014C7B1 /* ArchitectureMVPRootVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArchitectureMVPRootVC.m; sourceTree = "<group>"; };
+		EC961D3B1E165EF00014C7B1 /* AggregateTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AggregateTest-Bridging-Header.h"; path = "Sets4Test/ArchitectureMVP/AggregateTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		ECAA070E1E16963400A8F927 /* MVPTestDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVPTestDataModel.h; sourceTree = "<group>"; };
+		ECAA070F1E16963400A8F927 /* MVPTestDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVPTestDataModel.m; sourceTree = "<group>"; };
+		ECAA07111E16967C00A8F927 /* MVPTestPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVPTestPresenter.h; sourceTree = "<group>"; };
+		ECAA07121E16967C00A8F927 /* MVPTestPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVPTestPresenter.m; sourceTree = "<group>"; };
+		ECAA07141E16970500A8F927 /* MVPTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVPTestViewController.h; sourceTree = "<group>"; };
+		ECAA07151E16970500A8F927 /* MVPTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVPTestViewController.m; sourceTree = "<group>"; };
 		F6C47751CC6309678DDB008A /* libPods-AggregateTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AggregateTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -170,6 +183,7 @@
 				94BFA65D1E0169CB006AB728 /* Assets.xcassets */,
 				94BFA65F1E0169CB006AB728 /* LaunchScreen.storyboard */,
 				94BFA6621E0169CB006AB728 /* Info.plist */,
+				EC961D3B1E165EF00014C7B1 /* AggregateTest-Bridging-Header.h */,
 				94BFA6511E0169CB006AB728 /* Supporting Files */,
 			);
 			path = AggregateTest;
@@ -204,6 +218,7 @@
 		94BFA6841E016D5D006AB728 /* Sets4Test */ = {
 			isa = PBXGroup;
 			children = (
+				EC961D371E1656F40014C7B1 /* ArchitectureMVP */,
 				94BFA6871E016DC4006AB728 /* JSPatch */,
 			);
 			path = Sets4Test;
@@ -233,7 +248,7 @@
 			children = (
 				94BFA6881E016E08006AB728 /* JSPatchTestRootVC.h */,
 				94BFA6891E016E08006AB728 /* JSPatchTestRootVC.m */,
-				94BFA6BC1E025B1A006AB728 /* Entrance.js */,
+				94BFA6BC1E025B1A006AB728 /* main.js */,
 			);
 			path = JSPatch;
 			sourceTree = "<group>";
@@ -282,6 +297,21 @@
 				94BFA6BA1E0249AC006AB728 /* RootTableViewCell.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		EC961D371E1656F40014C7B1 /* ArchitectureMVP */ = {
+			isa = PBXGroup;
+			children = (
+				EC961D381E1657FA0014C7B1 /* ArchitectureMVPRootVC.h */,
+				EC961D391E1657FA0014C7B1 /* ArchitectureMVPRootVC.m */,
+				ECAA070E1E16963400A8F927 /* MVPTestDataModel.h */,
+				ECAA070F1E16963400A8F927 /* MVPTestDataModel.m */,
+				ECAA07111E16967C00A8F927 /* MVPTestPresenter.h */,
+				ECAA07121E16967C00A8F927 /* MVPTestPresenter.m */,
+				ECAA07141E16970500A8F927 /* MVPTestViewController.h */,
+				ECAA07151E16970500A8F927 /* MVPTestViewController.m */,
+			);
+			path = ArchitectureMVP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,6 +391,7 @@
 					94BFA64D1E0169CB006AB728 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = JYRT8AXTRS;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					94BFA6661E0169CB006AB728 = {
@@ -402,7 +433,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94BFA6BD1E025B1A006AB728 /* Entrance.js in Resources */,
+				94BFA6BD1E025B1A006AB728 /* main.js in Resources */,
 				94BFA6611E0169CB006AB728 /* LaunchScreen.storyboard in Resources */,
 				94BFA65E1E0169CB006AB728 /* Assets.xcassets in Resources */,
 			);
@@ -567,12 +598,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECAA07131E16967C00A8F927 /* MVPTestPresenter.m in Sources */,
+				ECAA07161E16970500A8F927 /* MVPTestViewController.m in Sources */,
 				94BFA68A1E016E08006AB728 /* JSPatchTestRootVC.m in Sources */,
 				94BFA69E1E024740006AB728 /* YUENSwizzleMethodUtil.m in Sources */,
 				94BFA6BB1E0249AC006AB728 /* RootTableViewCell.m in Sources */,
 				94BFA6B41E024917006AB728 /* RootNavigationController.m in Sources */,
 				94BFA69A1E0246E9006AB728 /* UIViewController+MediatorWeafRefRegister.m in Sources */,
+				EC961D3A1E1657FA0014C7B1 /* ArchitectureMVPRootVC.m in Sources */,
 				94BFA6561E0169CB006AB728 /* AppDelegate.m in Sources */,
+				ECAA07101E16963400A8F927 /* MVPTestDataModel.m in Sources */,
 				94BFA6531E0169CB006AB728 /* main.m in Sources */,
 				94BFA6941E0238AD006AB728 /* YUENMediator+Root.m in Sources */,
 				94BFA6B51E024917006AB728 /* RootTableViewController.m in Sources */,
@@ -717,11 +752,15 @@
 			baseConfigurationReference = 3D1022CDA15CF5DDC8037129 /* Pods-AggregateTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = JYRT8AXTRS;
 				INFOPLIST_FILE = AggregateTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ChengYuen.AggregateTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AggregateTest/Sets4Test/ArchitectureMVP/AggregateTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -730,11 +769,14 @@
 			baseConfigurationReference = DBFF50BC38358F115A8A8F83 /* Pods-AggregateTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = JYRT8AXTRS;
 				INFOPLIST_FILE = AggregateTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ChengYuen.AggregateTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AggregateTest/Sets4Test/ArchitectureMVP/AggregateTest-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

@@ -114,7 +114,7 @@
 - (void)btn4Entrance:(UIButton *)btn
 {
     [JPEngine startEngine];
-    NSString *__jsPath4ChangeBg = [[NSBundle mainBundle] pathForResource:@"Entrance" ofType:@"js"];
+    NSString *__jsPath4ChangeBg = [[NSBundle mainBundle] pathForResource:@"main" ofType:@"js"];
     NSString *__script = [NSString stringWithContentsOfFile:__jsPath4ChangeBg encoding:NSUTF8StringEncoding error:nil];
     [JPEngine evaluateScript:__script];
 }

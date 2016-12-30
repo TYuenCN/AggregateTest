@@ -58,4 +58,9 @@
  * 展现::JSPatch 测试页面
  */
 - (void)presentJSPatchTestVC;
+
+/**
+ * 展现::ArchitectureMVP 测试页面
+ */
+- (void)presentArchitectureMVP;
 @end
