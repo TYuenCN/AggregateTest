@@ -63,4 +63,9 @@
  * 展现::ArchitectureMVP 测试页面
  */
 - (void)presentArchitectureMVP;
+
+/**
+ * 展现::ArchitectureMVVM 测试页面
+ */
+- (void)presentArchitectureMVVM;
 @end

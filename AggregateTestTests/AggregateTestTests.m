@@ -40,8 +40,9 @@
 }
 
 - (void)testMemory{
-    NSLog(@"⭕️%lu", class_getInstanceSize([TestMemoryBaseClass class]));
-    NSLog(@"⭕️%lu", class_getInstanceSize([TestMemoryConcreteClass class]));
+    NSLog(@"⭕️NSObject: %lu", class_getInstanceSize([NSObject class]));
+    NSLog(@"⭕️TestMemoryBaseClass: %lu", class_getInstanceSize([TestMemoryBaseClass class]));
+    NSLog(@"⭕️TestMemoryConcreteClass: %lu", class_getInstanceSize([TestMemoryConcreteClass class]));
 }
 
 @end

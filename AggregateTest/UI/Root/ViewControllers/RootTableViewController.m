@@ -24,7 +24,8 @@
     if (self) {
         self.title = @"Test";
         self.arr4CellInfo = @[@[@"JSPatch", @"测试 JSPatch"],
-                              @[@"Architecture MVP", @"测试 MVP"]];
+                              @[@"Architecture MVP", @"测试 MVP"],
+                              @[@"Architecture MVVM", @"测试 MVVM"]];
     }
     return self;
 }
@@ -75,6 +76,9 @@
     }
     else if ([[[self.arr4CellInfo objectAtIndex:indexPath.row] objectAtIndex:0] isEqualToString:@"Architecture MVP"]) {
         [[YUENMediator sharedInstance] presentArchitectureMVP];
+    }
+    else if ([[[self.arr4CellInfo objectAtIndex:indexPath.row] objectAtIndex:0] isEqualToString:@"Architecture MVVM"]) {
+        [[YUENMediator sharedInstance] presentArchitectureMVVM];
     }
 }
 @end

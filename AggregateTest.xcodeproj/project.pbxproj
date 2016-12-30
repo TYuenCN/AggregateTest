@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0EE1689CF9D3F1C14598BDE6 /* libPods-AggregateTestUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B7B0D7AF9EDA4F5F0A30002 /* libPods-AggregateTestUITests.a */; };
 		94BFA6531E0169CB006AB728 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BFA6521E0169CB006AB728 /* main.m */; };
 		94BFA6561E0169CB006AB728 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BFA6551E0169CB006AB728 /* AppDelegate.m */; };
 		94BFA65E1E0169CB006AB728 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94BFA65D1E0169CB006AB728 /* Assets.xcassets */; };
@@ -22,12 +21,19 @@
 		94BFA6B51E024917006AB728 /* RootTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BFA6B21E024917006AB728 /* RootTableViewController.m */; };
 		94BFA6BB1E0249AC006AB728 /* RootTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BFA6BA1E0249AC006AB728 /* RootTableViewCell.m */; };
 		94BFA6BD1E025B1A006AB728 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 94BFA6BC1E025B1A006AB728 /* main.js */; };
-		9FF52AFBC7F6FDB194C488E8 /* libPods-AggregateTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C47751CC6309678DDB008A /* libPods-AggregateTest.a */; };
-		A5A48B1C1EAA983560C26556 /* libPods-AggregateTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90BDE710DD41EEF79FF2B8AF /* libPods-AggregateTestTests.a */; };
+		94BFA6C11E03E31C006AB728 /* TestMemoryBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BFA6C01E03E31C006AB728 /* TestMemoryBaseClass.m */; };
+		94BFA6C41E03E613006AB728 /* TestMemoryConcreteClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BFA6C31E03E613006AB728 /* TestMemoryConcreteClass.m */; };
+		D33C1B62F698DA4AFE569330 /* Pods_AggregateTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D63232C71A329EA03DF08F /* Pods_AggregateTestUITests.framework */; };
 		EC961D3A1E1657FA0014C7B1 /* ArchitectureMVPRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC961D391E1657FA0014C7B1 /* ArchitectureMVPRootVC.m */; };
 		ECAA07101E16963400A8F927 /* MVPTestDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAA070F1E16963400A8F927 /* MVPTestDataModel.m */; };
 		ECAA07131E16967C00A8F927 /* MVPTestPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAA07121E16967C00A8F927 /* MVPTestPresenter.m */; };
 		ECAA07161E16970500A8F927 /* MVPTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAA07151E16970500A8F927 /* MVPTestViewController.m */; };
+		ECAA071A1E16B58D00A8F927 /* ArchitectureMVVMRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAA07191E16B58D00A8F927 /* ArchitectureMVVMRootVC.m */; };
+		ECAA071D1E16BB7C00A8F927 /* MVVMTestDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAA071C1E16BB7C00A8F927 /* MVVMTestDataModel.m */; };
+		ECAA07201E16BBAD00A8F927 /* MVVMTestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAA071F1E16BBAD00A8F927 /* MVVMTestViewModel.m */; };
+		ECAA07231E16BD4C00A8F927 /* MVVMTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAA07221E16BD4C00A8F927 /* MVVMTestViewController.m */; };
+		F5879CA508566C6462D140E5 /* Pods_AggregateTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A730B1948499D57E69AB9992 /* Pods_AggregateTest.framework */; };
+		FABB6FCDEFC705C2B138FF0F /* Pods_AggregateTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63A8D28A536BB7D54BEADAA /* Pods_AggregateTestTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,9 +56,7 @@
 /* Begin PBXFileReference section */
 		3D1022CDA15CF5DDC8037129 /* Pods-AggregateTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AggregateTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AggregateTest/Pods-AggregateTest.debug.xcconfig"; sourceTree = "<group>"; };
 		7094C1E38C5BF09D282F009C /* Pods-AggregateTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AggregateTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AggregateTestTests/Pods-AggregateTestTests.release.xcconfig"; sourceTree = "<group>"; };
-		7B7B0D7AF9EDA4F5F0A30002 /* libPods-AggregateTestUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AggregateTestUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87929C801E75AF359C0CA2B5 /* Pods-AggregateTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AggregateTestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AggregateTestUITests/Pods-AggregateTestUITests.release.xcconfig"; sourceTree = "<group>"; };
-		90BDE710DD41EEF79FF2B8AF /* libPods-AggregateTestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AggregateTestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94BFA64E1E0169CB006AB728 /* AggregateTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AggregateTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94BFA6521E0169CB006AB728 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		94BFA6541E0169CB006AB728 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -82,6 +86,13 @@
 		94BFA6B91E0249AC006AB728 /* RootTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTableViewCell.h; sourceTree = "<group>"; };
 		94BFA6BA1E0249AC006AB728 /* RootTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTableViewCell.m; sourceTree = "<group>"; };
 		94BFA6BC1E025B1A006AB728 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		94BFA6BF1E03E31C006AB728 /* TestMemoryBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMemoryBaseClass.h; sourceTree = "<group>"; };
+		94BFA6C01E03E31C006AB728 /* TestMemoryBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMemoryBaseClass.m; sourceTree = "<group>"; };
+		94BFA6C21E03E613006AB728 /* TestMemoryConcreteClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMemoryConcreteClass.h; sourceTree = "<group>"; };
+		94BFA6C31E03E613006AB728 /* TestMemoryConcreteClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMemoryConcreteClass.m; sourceTree = "<group>"; };
+		94D63232C71A329EA03DF08F /* Pods_AggregateTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AggregateTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A730B1948499D57E69AB9992 /* Pods_AggregateTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AggregateTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B63A8D28A536BB7D54BEADAA /* Pods_AggregateTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AggregateTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBFF50BC38358F115A8A8F83 /* Pods-AggregateTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AggregateTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-AggregateTest/Pods-AggregateTest.release.xcconfig"; sourceTree = "<group>"; };
 		DEF1C9F57CFB1C400D336229 /* Pods-AggregateTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AggregateTestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AggregateTestUITests/Pods-AggregateTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EB2DC07C213859147A1FD22D /* Pods-AggregateTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AggregateTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AggregateTestTests/Pods-AggregateTestTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -94,7 +105,14 @@
 		ECAA07121E16967C00A8F927 /* MVPTestPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVPTestPresenter.m; sourceTree = "<group>"; };
 		ECAA07141E16970500A8F927 /* MVPTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVPTestViewController.h; sourceTree = "<group>"; };
 		ECAA07151E16970500A8F927 /* MVPTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVPTestViewController.m; sourceTree = "<group>"; };
-		F6C47751CC6309678DDB008A /* libPods-AggregateTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AggregateTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECAA07181E16B58D00A8F927 /* ArchitectureMVVMRootVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchitectureMVVMRootVC.h; sourceTree = "<group>"; };
+		ECAA07191E16B58D00A8F927 /* ArchitectureMVVMRootVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArchitectureMVVMRootVC.m; sourceTree = "<group>"; };
+		ECAA071B1E16BB7C00A8F927 /* MVVMTestDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVVMTestDataModel.h; sourceTree = "<group>"; };
+		ECAA071C1E16BB7C00A8F927 /* MVVMTestDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVVMTestDataModel.m; sourceTree = "<group>"; };
+		ECAA071E1E16BBAD00A8F927 /* MVVMTestViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVVMTestViewModel.h; sourceTree = "<group>"; };
+		ECAA071F1E16BBAD00A8F927 /* MVVMTestViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVVMTestViewModel.m; sourceTree = "<group>"; };
+		ECAA07211E16BD4C00A8F927 /* MVVMTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVVMTestViewController.h; sourceTree = "<group>"; };
+		ECAA07221E16BD4C00A8F927 /* MVVMTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVVMTestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FF52AFBC7F6FDB194C488E8 /* libPods-AggregateTest.a in Frameworks */,
+				F5879CA508566C6462D140E5 /* Pods_AggregateTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5A48B1C1EAA983560C26556 /* libPods-AggregateTestTests.a in Frameworks */,
+				FABB6FCDEFC705C2B138FF0F /* Pods_AggregateTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EE1689CF9D3F1C14598BDE6 /* libPods-AggregateTestUITests.a in Frameworks */,
+				D33C1B62F698DA4AFE569330 /* Pods_AggregateTestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,9 +159,9 @@
 		6D3556E844E788243C5D3FA0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F6C47751CC6309678DDB008A /* libPods-AggregateTest.a */,
-				90BDE710DD41EEF79FF2B8AF /* libPods-AggregateTestTests.a */,
-				7B7B0D7AF9EDA4F5F0A30002 /* libPods-AggregateTestUITests.a */,
+				A730B1948499D57E69AB9992 /* Pods_AggregateTest.framework */,
+				B63A8D28A536BB7D54BEADAA /* Pods_AggregateTestTests.framework */,
+				94D63232C71A329EA03DF08F /* Pods_AggregateTestUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -218,7 +236,9 @@
 		94BFA6841E016D5D006AB728 /* Sets4Test */ = {
 			isa = PBXGroup;
 			children = (
+				94BFA6BE1E03E2FF006AB728 /* Memory */,
 				EC961D371E1656F40014C7B1 /* ArchitectureMVP */,
+				ECAA07171E16B56900A8F927 /* ArchitectureMVVM */,
 				94BFA6871E016DC4006AB728 /* JSPatch */,
 			);
 			path = Sets4Test;
@@ -299,6 +319,17 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		94BFA6BE1E03E2FF006AB728 /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+				94BFA6BF1E03E31C006AB728 /* TestMemoryBaseClass.h */,
+				94BFA6C01E03E31C006AB728 /* TestMemoryBaseClass.m */,
+				94BFA6C21E03E613006AB728 /* TestMemoryConcreteClass.h */,
+				94BFA6C31E03E613006AB728 /* TestMemoryConcreteClass.m */,
+			);
+			path = Memory;
+			sourceTree = "<group>";
+		};
 		EC961D371E1656F40014C7B1 /* ArchitectureMVP */ = {
 			isa = PBXGroup;
 			children = (
@@ -312,6 +343,21 @@
 				ECAA07151E16970500A8F927 /* MVPTestViewController.m */,
 			);
 			path = ArchitectureMVP;
+			sourceTree = "<group>";
+		};
+		ECAA07171E16B56900A8F927 /* ArchitectureMVVM */ = {
+			isa = PBXGroup;
+			children = (
+				ECAA07181E16B58D00A8F927 /* ArchitectureMVVMRootVC.h */,
+				ECAA07191E16B58D00A8F927 /* ArchitectureMVVMRootVC.m */,
+				ECAA071B1E16BB7C00A8F927 /* MVVMTestDataModel.h */,
+				ECAA071C1E16BB7C00A8F927 /* MVVMTestDataModel.m */,
+				ECAA071E1E16BBAD00A8F927 /* MVVMTestViewModel.h */,
+				ECAA071F1E16BBAD00A8F927 /* MVVMTestViewModel.m */,
+				ECAA07211E16BD4C00A8F927 /* MVVMTestViewController.h */,
+				ECAA07221E16BD4C00A8F927 /* MVVMTestViewController.m */,
+			);
+			path = ArchitectureMVVM;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -600,6 +646,7 @@
 			files = (
 				ECAA07131E16967C00A8F927 /* MVPTestPresenter.m in Sources */,
 				ECAA07161E16970500A8F927 /* MVPTestViewController.m in Sources */,
+				ECAA07201E16BBAD00A8F927 /* MVVMTestViewModel.m in Sources */,
 				94BFA68A1E016E08006AB728 /* JSPatchTestRootVC.m in Sources */,
 				94BFA69E1E024740006AB728 /* YUENSwizzleMethodUtil.m in Sources */,
 				94BFA6C11E03E31C006AB728 /* TestMemoryBaseClass.m in Sources */,
@@ -607,6 +654,9 @@
 				94BFA6B41E024917006AB728 /* RootNavigationController.m in Sources */,
 				94BFA6C41E03E613006AB728 /* TestMemoryConcreteClass.m in Sources */,
 				94BFA69A1E0246E9006AB728 /* UIViewController+MediatorWeafRefRegister.m in Sources */,
+				ECAA071A1E16B58D00A8F927 /* ArchitectureMVVMRootVC.m in Sources */,
+				ECAA071D1E16BB7C00A8F927 /* MVVMTestDataModel.m in Sources */,
+				ECAA07231E16BD4C00A8F927 /* MVVMTestViewController.m in Sources */,
 				EC961D3A1E1657FA0014C7B1 /* ArchitectureMVPRootVC.m in Sources */,
 				94BFA6561E0169CB006AB728 /* AppDelegate.m in Sources */,
 				ECAA07101E16963400A8F927 /* MVPTestDataModel.m in Sources */,

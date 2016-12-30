@@ -2,13 +2,22 @@ PODS:
   - JSPatch (1.1.1):
     - JSPatch/Core (= 1.1.1)
   - JSPatch/Core (1.1.1)
+  - ReactiveCocoa (5.0.0-rc.1):
+    - ReactiveSwift (~> 1.0.0-rc.3)
+  - ReactiveSwift (1.0.0-rc.3):
+    - Result (~> 3.1)
+  - Result (3.1.0)
 
 DEPENDENCIES:
   - JSPatch
+  - ReactiveCocoa (= 5.0.0-rc.1)
 
 SPEC CHECKSUMS:
   JSPatch: a4e4d28aef1dc17f4334d9e6bd590d7f0a0cd7b1
+  ReactiveCocoa: 3e9cad4b77fa199d41e03f603cb55d0701ad6ad8
+  ReactiveSwift: 443cb065e9aa9451b30f0c85e9d7e9b4cec369cd
+  Result: 4e3ed5995ed94d0cd6a09be9a431fce3f3624bbf
 
-PODFILE CHECKSUM: 4492cbcb7fc85138b37bcc7f31ebde2f4b51f264
+PODFILE CHECKSUM: 57a6ada42672987d01b91cc55e522c2c589c99bf
 
 COCOAPODS: 1.2.0.beta.1
