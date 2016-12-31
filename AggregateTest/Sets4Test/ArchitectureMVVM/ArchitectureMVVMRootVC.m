@@ -7,6 +7,8 @@
 //
 
 #import "ArchitectureMVVMRootVC.h"
+#import "MVVMTestViewModel.h"
+#import "MVVMTestDataModel.h"
 
 @interface ArchitectureMVVMRootVC ()
 
@@ -34,9 +36,18 @@
     
     //
     //
-    // Assembly MVP
+    // Assembly MVVM
+    // ViewModel
+    MVVMTestDataModel *__dataModel = [MVVMTestDataModel new];
+    MVVMTestViewModel *__viewModel = [[MVVMTestViewModel alloc] initWithModel:__dataModel];
+    
     // View
     MVVMTestViewController *__vc = [MVVMTestViewController new];
+    __vc.viewModel = __viewModel;
+    
+    //
+    //
+    // Add View
     [self addChildViewController:__vc];
     [self.view addSubview:__vc.view];
     [__vc didMoveToParentViewController:self];

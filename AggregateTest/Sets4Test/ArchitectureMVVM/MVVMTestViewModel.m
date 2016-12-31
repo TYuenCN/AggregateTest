@@ -6,6 +6,7 @@
 //  Copyright © 2016年 Yuen. All rights reserved.
 //
 
+#import <ReactiveCocoa/ReactiveCocoa.h>
 #import "MVVMTestViewModel.h"
 
 @interface MVVMTestViewModel ()
@@ -25,6 +26,9 @@
     if (self) {
         self.model = model;
         self.strValAtViewModel = self.model.strVal;
+        [RACObserve(self.model, strVal) subscribeNext:^(NSString *strVal) {
+            self.strValAtViewModel = strVal;
+        }];
     }
     
     return self;

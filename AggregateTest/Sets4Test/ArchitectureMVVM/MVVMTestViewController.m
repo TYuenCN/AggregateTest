@@ -6,6 +6,7 @@
 //  Copyright © 2016年 Yuen. All rights reserved.
 //
 
+#import <ReactiveCocoa/ReactiveCocoa.h>
 #import "MVVMTestViewController.h"
 
 @interface MVVMTestViewController ()
@@ -43,6 +44,11 @@
             [self.p_timer invalidate];
             self.p_timer = nil;
         }
+    }];
+    
+    
+    [RACObserve(self.viewModel, strValAtViewModel) subscribeNext:^(NSString *strValAtViewModel) {
+        self.p_lbl.text = strValAtViewModel;
     }];
 }
 @end

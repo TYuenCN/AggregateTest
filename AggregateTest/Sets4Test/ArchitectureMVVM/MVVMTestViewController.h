@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MVVMTestViewModel.h"
 
 @interface MVVMTestViewController : UIViewController
-
+@property (nullable, nonatomic, strong) MVVMTestViewModel *viewModel;
 @end

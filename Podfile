@@ -10,7 +10,8 @@ target 'AggregateTest' do
   # Pods for AggregateTest
 
   pod 'JSPatch'
-  pod 'ReactiveCocoa', '5.0.0-rc.1'
+  # 选2.5版，3.0和4.0都忙着用Swift重构去了，搞出了很多新东西，不利于新手入门
+  pod 'ReactiveCocoa', '2.5'
 
   target 'AggregateTestTests' do
     inherit! :search_paths
