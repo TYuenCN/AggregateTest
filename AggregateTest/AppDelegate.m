@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "YUENMediator.h"
+#import <React/RCTRootView.h>
 
 @interface AppDelegate ()
 
@@ -18,9 +19,33 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    
+    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyAndVisible];
     [[YUENMediator sharedInstance] configureStartup];
+    
+    NSURL *jsCodeLocation;
+    jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.ios.bundle?platform=ios"];
+    RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
+                                                        moduleName:@"RNHighScores"
+                                                 initialProperties:@{
+                                                                     @"scores" : @[
+                                                                             @{
+                                                                                 @"name" : @"Alex",
+                                                                                 @"value": @"42"
+                                                                                 },
+                                                                             @{
+                                                                                 @"name" : @"Joel",
+                                                                                 @"value": @"10"
+                                                                                 }
+                                                                             ]
+                                                                     }
+                                                     launchOptions:launchOptions];
+    rootView.frame = [[UIScreen mainScreen]bounds];
+    [self.window addSubview:rootView];
+    
+    
     return YES;
 }
 

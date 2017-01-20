@@ -63,3 +63,9 @@ fastlane/screenshots
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+#
+#
+# React-Native-Modules
+node_modules/
+ReactNative/node_modules/

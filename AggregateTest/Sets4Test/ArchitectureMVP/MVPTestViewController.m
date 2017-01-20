@@ -39,6 +39,33 @@
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.p_btn attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeading multiplier:1.0 constant:0.0]];
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.p_btn attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTrailing multiplier:1.0 constant:0.0]];
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.p_btn attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.p_lbl attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]];
+    
+    
+    //
+    //
+    //
+    NSString *searchText = @"1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分";
+    NSDictionary *__default = @{NSFontAttributeName:[UIFont systemFontOfSize:14]};
+    NSMutableAttributedString *__attrStr = [[NSMutableAttributedString alloc] initWithString:searchText attributes:__default];
+    
+    NSError *error = NULL;
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"[0-9]+" options:NSRegularExpressionCaseInsensitive error:&error];
+    NSArray *__arr = [regex matchesInString:searchText options:NSMatchingReportProgress range:NSMakeRange(0, searchText.length)];
+    for (int i = 0; i < __arr.count; i++) {
+        NSTextCheckingResult *__rslt = [__arr objectAtIndex:i];
+        NSLog(@"%@", NSStringFromRange(__rslt.range));
+        [__attrStr addAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:26], NSForegroundColorAttributeName:[UIColor redColor]} range:__rslt.range];
+    }
+    
+    UILabel *__lbl = [[UILabel alloc] initWithFrame:CGRectZero];
+    __lbl.attributedText = __attrStr;
+    [self.view addSubview:__lbl];
+    __lbl.translatesAutoresizingMaskIntoConstraints = false;
+    [__lbl addConstraint:[NSLayoutConstraint constraintWithItem:__lbl attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:40.0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:__lbl attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeading multiplier:1.0 constant:0.0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:__lbl attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTrailing multiplier:1.0 constant:0.0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:__lbl attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.p_btn attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]];
+    
 }
 
 - (void)didReceiveMemoryWarning {
