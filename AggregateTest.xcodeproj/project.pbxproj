@@ -31,6 +31,7 @@
 		EC5A41651E328C18005C6277 /* libcxxreact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5A413F1E327CEF005C6277 /* libcxxreact.a */; };
 		EC5A41661E328C1D005C6277 /* libjschelpers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5A41431E327CEF005C6277 /* libjschelpers.a */; };
 		EC5A41671E328C24005C6277 /* libyoga.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5A413B1E327CEF005C6277 /* libyoga.a */; };
+		EC5A41691E328FC3005C6277 /* index.ios.js in Resources */ = {isa = PBXBuildFile; fileRef = EC5A41681E328FC3005C6277 /* index.ios.js */; };
 		EC961D3A1E1657FA0014C7B1 /* ArchitectureMVPRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC961D391E1657FA0014C7B1 /* ArchitectureMVPRootVC.m */; };
 		ECAA07101E16963400A8F927 /* MVPTestDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAA070F1E16963400A8F927 /* MVPTestDataModel.m */; };
 		ECAA07131E16967C00A8F927 /* MVPTestPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAA07121E16967C00A8F927 /* MVPTestPresenter.m */; };
@@ -211,6 +212,7 @@
 		EC5A41461E327D16005C6277 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "ReactNative/node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		EC5A41511E3288C0005C6277 /* RCTNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTNetwork.xcodeproj; path = "ReactNative/node_modules/react-native/Libraries/Network/RCTNetwork.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		EC5A415A1E3288DF005C6277 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "ReactNative/node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		EC5A41681E328FC3005C6277 /* index.ios.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.ios.js; sourceTree = "<group>"; };
 		EC961D381E1657FA0014C7B1 /* ArchitectureMVPRootVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchitectureMVPRootVC.h; sourceTree = "<group>"; };
 		EC961D391E1657FA0014C7B1 /* ArchitectureMVPRootVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArchitectureMVPRootVC.m; sourceTree = "<group>"; };
 		EC961D3B1E165EF00014C7B1 /* AggregateTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AggregateTest-Bridging-Header.h"; path = "Sets4Test/ArchitectureMVP/AggregateTest-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -461,6 +463,7 @@
 		EC5A41181E3278B0005C6277 /* ReactNative */ = {
 			isa = PBXGroup;
 			children = (
+				EC5A41681E328FC3005C6277 /* index.ios.js */,
 				EC5A411B1E327B88005C6277 /* package.json */,
 				EC5A411C1E327B88005C6277 /* ReactNative.rtfd */,
 			);
@@ -788,6 +791,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC5A41691E328FC3005C6277 /* index.ios.js in Resources */,
 				94BFA6BD1E025B1A006AB728 /* main.js in Resources */,
 				94BFA6611E0169CB006AB728 /* LaunchScreen.storyboard in Resources */,
 				94BFA65E1E0169CB006AB728 /* Assets.xcassets in Resources */,
