@@ -32,6 +32,7 @@
 		EC5A41661E328C1D005C6277 /* libjschelpers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5A41431E327CEF005C6277 /* libjschelpers.a */; };
 		EC5A41671E328C24005C6277 /* libyoga.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5A413B1E327CEF005C6277 /* libyoga.a */; };
 		EC5A41691E328FC3005C6277 /* index.ios.js in Resources */ = {isa = PBXBuildFile; fileRef = EC5A41681E328FC3005C6277 /* index.ios.js */; };
+		EC5A416F1E3479F0005C6277 /* ReactNative.md in Sources */ = {isa = PBXBuildFile; fileRef = EC5A416E1E3479F0005C6277 /* ReactNative.md */; };
 		EC961D3A1E1657FA0014C7B1 /* ArchitectureMVPRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC961D391E1657FA0014C7B1 /* ArchitectureMVPRootVC.m */; };
 		ECAA07101E16963400A8F927 /* MVPTestDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAA070F1E16963400A8F927 /* MVPTestDataModel.m */; };
 		ECAA07131E16967C00A8F927 /* MVPTestPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAA07121E16967C00A8F927 /* MVPTestPresenter.m */; };
@@ -207,12 +208,12 @@
 		EC14677F1E31F21600871E33 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = "../../../../../Users/yuanzheng/Library/Developer/Xcode/DerivedData/AggregateTest-adcvaspuqdokdybrashecawkkpyi/Build/Products/Debug-iphonesimulator/ReactiveCocoa/ReactiveCocoa.framework"; sourceTree = "<group>"; };
 		EC1467811E31F23B00871E33 /* JSPatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSPatch.framework; path = "../../../../../Users/yuanzheng/Library/Developer/Xcode/DerivedData/AggregateTest-adcvaspuqdokdybrashecawkkpyi/Build/Products/Debug-iphonesimulator/JSPatch/JSPatch.framework"; sourceTree = "<group>"; };
 		EC5A411B1E327B88005C6277 /* package.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = package.json; sourceTree = "<group>"; };
-		EC5A411C1E327B88005C6277 /* ReactNative.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; path = ReactNative.rtfd; sourceTree = "<group>"; };
 		EC5A412B1E327CEF005C6277 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "ReactNative/node_modules/react-native/React/React.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		EC5A41461E327D16005C6277 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "ReactNative/node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		EC5A41511E3288C0005C6277 /* RCTNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTNetwork.xcodeproj; path = "ReactNative/node_modules/react-native/Libraries/Network/RCTNetwork.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		EC5A415A1E3288DF005C6277 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "ReactNative/node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		EC5A41681E328FC3005C6277 /* index.ios.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.ios.js; sourceTree = "<group>"; };
+		EC5A416E1E3479F0005C6277 /* ReactNative.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ReactNative.md; sourceTree = "<group>"; };
 		EC961D381E1657FA0014C7B1 /* ArchitectureMVPRootVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchitectureMVPRootVC.h; sourceTree = "<group>"; };
 		EC961D391E1657FA0014C7B1 /* ArchitectureMVPRootVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArchitectureMVPRootVC.m; sourceTree = "<group>"; };
 		EC961D3B1E165EF00014C7B1 /* AggregateTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AggregateTest-Bridging-Header.h"; path = "Sets4Test/ArchitectureMVP/AggregateTest-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -463,9 +464,9 @@
 		EC5A41181E3278B0005C6277 /* ReactNative */ = {
 			isa = PBXGroup;
 			children = (
+				EC5A416E1E3479F0005C6277 /* ReactNative.md */,
 				EC5A41681E328FC3005C6277 /* index.ios.js */,
 				EC5A411B1E327B88005C6277 /* package.json */,
-				EC5A411C1E327B88005C6277 /* ReactNative.rtfd */,
 			);
 			path = ReactNative;
 			sourceTree = "<group>";
@@ -964,6 +965,7 @@
 				94BFA69E1E024740006AB728 /* YUENSwizzleMethodUtil.m in Sources */,
 				94BFA6C11E03E31C006AB728 /* TestMemoryBaseClass.m in Sources */,
 				94BFA6BB1E0249AC006AB728 /* RootTableViewCell.m in Sources */,
+				EC5A416F1E3479F0005C6277 /* ReactNative.md in Sources */,
 				94BFA6B41E024917006AB728 /* RootNavigationController.m in Sources */,
 				94BFA6C41E03E613006AB728 /* TestMemoryConcreteClass.m in Sources */,
 				94BFA69A1E0246E9006AB728 /* UIViewController+MediatorWeafRefRegister.m in Sources */,
