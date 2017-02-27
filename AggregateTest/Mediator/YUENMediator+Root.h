@@ -55,6 +55,11 @@
 - (void)presentRootViewController;
 
 /**
+ * 展现::ReactNative 测试页面
+ */
+- (void)presentReactNativeTestVC;
+
+/**
  * 展现::JSPatch 测试页面
  */
 - (void)presentJSPatchTestVC;

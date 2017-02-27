@@ -10,6 +10,7 @@
 #import <objc/runtime.h>
 #import "TestMemoryBaseClass.h"
 #import "TestMemoryConcreteClass.h"
+#import "TestRuntime.h"
 
 @interface AggregateTestTests : XCTestCase
 
@@ -43,6 +44,13 @@
     NSLog(@"⭕️NSObject: %lu", class_getInstanceSize([NSObject class]));
     NSLog(@"⭕️TestMemoryBaseClass: %lu", class_getInstanceSize([TestMemoryBaseClass class]));
     NSLog(@"⭕️TestMemoryConcreteClass: %lu", class_getInstanceSize([TestMemoryConcreteClass class]));
+}
+
+- (void)testRuntime{
+    TestRuntime *tr = [TestRuntime new];
+    [tr getClassSelFromString];
+    [tr replaceClassMethod];
+    [tr registNewClassAddMethodInvokeMethod];
 }
 
 @end

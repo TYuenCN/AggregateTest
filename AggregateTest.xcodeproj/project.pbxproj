@@ -24,6 +24,8 @@
 		94BFA6C11E03E31C006AB728 /* TestMemoryBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BFA6C01E03E31C006AB728 /* TestMemoryBaseClass.m */; };
 		94BFA6C41E03E613006AB728 /* TestMemoryConcreteClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BFA6C31E03E613006AB728 /* TestMemoryConcreteClass.m */; };
 		D33C1B62F698DA4AFE569330 /* Pods_AggregateTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D63232C71A329EA03DF08F /* Pods_AggregateTestUITests.framework */; };
+		EC31F6BF1E3C5D85004CEF73 /* RNTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC31F6BE1E3C5D85004CEF73 /* RNTestViewController.m */; };
+		EC31F6DC1E534DE7004CEF73 /* TestRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = EC31F6DB1E534DE7004CEF73 /* TestRuntime.m */; };
 		EC5A414F1E327D1F005C6277 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5A414C1E327D16005C6277 /* libRCTText.a */; };
 		EC5A41501E327D24005C6277 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5A41371E327CEF005C6277 /* libReact.a */; };
 		EC5A41631E328C0A005C6277 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5A41571E3288C1005C6277 /* libRCTNetwork.a */; };
@@ -33,6 +35,19 @@
 		EC5A41671E328C24005C6277 /* libyoga.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5A413B1E327CEF005C6277 /* libyoga.a */; };
 		EC5A41691E328FC3005C6277 /* index.ios.js in Resources */ = {isa = PBXBuildFile; fileRef = EC5A41681E328FC3005C6277 /* index.ios.js */; };
 		EC5A416F1E3479F0005C6277 /* ReactNative.md in Sources */ = {isa = PBXBuildFile; fileRef = EC5A416E1E3479F0005C6277 /* ReactNative.md */; };
+		EC9305EA1E5C00AF00DF65CF /* TestRunLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9305E91E5C00AF00DF65CF /* TestRunLoop.m */; };
+		EC9305ED1E5FDAF500DF65CF /* Thread.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9305EC1E5FDAF500DF65CF /* Thread.m */; };
+		EC9305F11E5FEAEF00DF65CF /* Image2Video.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9305F01E5FEAEF00DF65CF /* Image2Video.m */; };
+		EC9305F31E5FF0ED00DF65CF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9305F21E5FF0ED00DF65CF /* AVFoundation.framework */; };
+		EC9305F51E5FF0F400DF65CF /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9305F41E5FF0F400DF65CF /* VideoToolbox.framework */; };
+		EC9306021E6043FD00DF65CF /* 1.tiff in Resources */ = {isa = PBXBuildFile; fileRef = EC9305FA1E6043FD00DF65CF /* 1.tiff */; };
+		EC9306031E6043FD00DF65CF /* 2.tiff in Resources */ = {isa = PBXBuildFile; fileRef = EC9305FB1E6043FD00DF65CF /* 2.tiff */; };
+		EC9306041E6043FD00DF65CF /* 3.tiff in Resources */ = {isa = PBXBuildFile; fileRef = EC9305FC1E6043FD00DF65CF /* 3.tiff */; };
+		EC9306051E6043FD00DF65CF /* 4.tiff in Resources */ = {isa = PBXBuildFile; fileRef = EC9305FD1E6043FD00DF65CF /* 4.tiff */; };
+		EC9306061E6043FD00DF65CF /* 5.tiff in Resources */ = {isa = PBXBuildFile; fileRef = EC9305FE1E6043FD00DF65CF /* 5.tiff */; };
+		EC9306071E6043FD00DF65CF /* 6.tiff in Resources */ = {isa = PBXBuildFile; fileRef = EC9305FF1E6043FD00DF65CF /* 6.tiff */; };
+		EC9306081E6043FD00DF65CF /* 7.tiff in Resources */ = {isa = PBXBuildFile; fileRef = EC9306001E6043FD00DF65CF /* 7.tiff */; };
+		EC9306091E6043FD00DF65CF /* 8.tiff in Resources */ = {isa = PBXBuildFile; fileRef = EC9306011E6043FD00DF65CF /* 8.tiff */; };
 		EC961D3A1E1657FA0014C7B1 /* ArchitectureMVPRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC961D391E1657FA0014C7B1 /* ArchitectureMVPRootVC.m */; };
 		ECAA07101E16963400A8F927 /* MVPTestDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAA070F1E16963400A8F927 /* MVPTestDataModel.m */; };
 		ECAA07131E16967C00A8F927 /* MVPTestPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAA07121E16967C00A8F927 /* MVPTestPresenter.m */; };
@@ -207,6 +222,10 @@
 		EC14677D1E31F21200871E33 /* React.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = React.framework; path = "../../../../../Users/yuanzheng/Library/Developer/Xcode/DerivedData/AggregateTest-adcvaspuqdokdybrashecawkkpyi/Build/Products/Debug-iphonesimulator/React/React.framework"; sourceTree = "<group>"; };
 		EC14677F1E31F21600871E33 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = "../../../../../Users/yuanzheng/Library/Developer/Xcode/DerivedData/AggregateTest-adcvaspuqdokdybrashecawkkpyi/Build/Products/Debug-iphonesimulator/ReactiveCocoa/ReactiveCocoa.framework"; sourceTree = "<group>"; };
 		EC1467811E31F23B00871E33 /* JSPatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSPatch.framework; path = "../../../../../Users/yuanzheng/Library/Developer/Xcode/DerivedData/AggregateTest-adcvaspuqdokdybrashecawkkpyi/Build/Products/Debug-iphonesimulator/JSPatch/JSPatch.framework"; sourceTree = "<group>"; };
+		EC31F6BD1E3C5D85004CEF73 /* RNTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNTestViewController.h; sourceTree = "<group>"; };
+		EC31F6BE1E3C5D85004CEF73 /* RNTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNTestViewController.m; sourceTree = "<group>"; };
+		EC31F6DA1E534DE7004CEF73 /* TestRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestRuntime.h; sourceTree = "<group>"; };
+		EC31F6DB1E534DE7004CEF73 /* TestRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestRuntime.m; sourceTree = "<group>"; };
 		EC5A411B1E327B88005C6277 /* package.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = package.json; sourceTree = "<group>"; };
 		EC5A412B1E327CEF005C6277 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "ReactNative/node_modules/react-native/React/React.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		EC5A41461E327D16005C6277 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "ReactNative/node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = SOURCE_ROOT; };
@@ -214,6 +233,22 @@
 		EC5A415A1E3288DF005C6277 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "ReactNative/node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		EC5A41681E328FC3005C6277 /* index.ios.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.ios.js; sourceTree = "<group>"; };
 		EC5A416E1E3479F0005C6277 /* ReactNative.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ReactNative.md; sourceTree = "<group>"; };
+		EC9305E81E5C00AF00DF65CF /* TestRunLoop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestRunLoop.h; sourceTree = "<group>"; };
+		EC9305E91E5C00AF00DF65CF /* TestRunLoop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestRunLoop.m; sourceTree = "<group>"; };
+		EC9305EB1E5FDAF500DF65CF /* Thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thread.h; sourceTree = "<group>"; };
+		EC9305EC1E5FDAF500DF65CF /* Thread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Thread.m; sourceTree = "<group>"; };
+		EC9305EF1E5FEAEF00DF65CF /* Image2Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image2Video.h; sourceTree = "<group>"; };
+		EC9305F01E5FEAEF00DF65CF /* Image2Video.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Image2Video.m; sourceTree = "<group>"; };
+		EC9305F21E5FF0ED00DF65CF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EC9305F41E5FF0F400DF65CF /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		EC9305FA1E6043FD00DF65CF /* 1.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = 1.tiff; sourceTree = "<group>"; };
+		EC9305FB1E6043FD00DF65CF /* 2.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = 2.tiff; sourceTree = "<group>"; };
+		EC9305FC1E6043FD00DF65CF /* 3.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = 3.tiff; sourceTree = "<group>"; };
+		EC9305FD1E6043FD00DF65CF /* 4.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = 4.tiff; sourceTree = "<group>"; };
+		EC9305FE1E6043FD00DF65CF /* 5.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = 5.tiff; sourceTree = "<group>"; };
+		EC9305FF1E6043FD00DF65CF /* 6.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = 6.tiff; sourceTree = "<group>"; };
+		EC9306001E6043FD00DF65CF /* 7.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = 7.tiff; sourceTree = "<group>"; };
+		EC9306011E6043FD00DF65CF /* 8.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = 8.tiff; sourceTree = "<group>"; };
 		EC961D381E1657FA0014C7B1 /* ArchitectureMVPRootVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchitectureMVPRootVC.h; sourceTree = "<group>"; };
 		EC961D391E1657FA0014C7B1 /* ArchitectureMVPRootVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArchitectureMVPRootVC.m; sourceTree = "<group>"; };
 		EC961D3B1E165EF00014C7B1 /* AggregateTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AggregateTest-Bridging-Header.h"; path = "Sets4Test/ArchitectureMVP/AggregateTest-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -238,6 +273,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC9305F51E5FF0F400DF65CF /* VideoToolbox.framework in Frameworks */,
+				EC9305F31E5FF0ED00DF65CF /* AVFoundation.framework in Frameworks */,
 				EC5A41671E328C24005C6277 /* libyoga.a in Frameworks */,
 				EC5A41661E328C1D005C6277 /* libjschelpers.a in Frameworks */,
 				EC5A41651E328C18005C6277 /* libcxxreact.a in Frameworks */,
@@ -284,6 +321,8 @@
 		6D3556E844E788243C5D3FA0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EC9305F41E5FF0F400DF65CF /* VideoToolbox.framework */,
+				EC9305F21E5FF0ED00DF65CF /* AVFoundation.framework */,
 				EC1467811E31F23B00871E33 /* JSPatch.framework */,
 				EC14677F1E31F21600871E33 /* ReactiveCocoa.framework */,
 				EC14677D1E31F21200871E33 /* React.framework */,
@@ -333,6 +372,14 @@
 				94BFA65F1E0169CB006AB728 /* LaunchScreen.storyboard */,
 				94BFA6621E0169CB006AB728 /* Info.plist */,
 				EC961D3B1E165EF00014C7B1 /* AggregateTest-Bridging-Header.h */,
+				EC9305FA1E6043FD00DF65CF /* 1.tiff */,
+				EC9305FB1E6043FD00DF65CF /* 2.tiff */,
+				EC9305FC1E6043FD00DF65CF /* 3.tiff */,
+				EC9305FD1E6043FD00DF65CF /* 4.tiff */,
+				EC9305FE1E6043FD00DF65CF /* 5.tiff */,
+				EC9305FF1E6043FD00DF65CF /* 6.tiff */,
+				EC9306001E6043FD00DF65CF /* 7.tiff */,
+				EC9306011E6043FD00DF65CF /* 8.tiff */,
 				94BFA6511E0169CB006AB728 /* Supporting Files */,
 			);
 			path = AggregateTest;
@@ -368,9 +415,13 @@
 			isa = PBXGroup;
 			children = (
 				94BFA6BE1E03E2FF006AB728 /* Memory */,
+				EC31F6CB1E534DB5004CEF73 /* Runtime */,
+				EC9305D91E5C009D00DF65CF /* RunLoop */,
+				EC31F6AE1E3C5D55004CEF73 /* ReactNative */,
 				EC961D371E1656F40014C7B1 /* ArchitectureMVP */,
 				ECAA07171E16B56900A8F927 /* ArchitectureMVVM */,
 				94BFA6871E016DC4006AB728 /* JSPatch */,
+				EC9305EE1E5FEAC900DF65CF /* Image2Video */,
 			);
 			path = Sets4Test;
 			sourceTree = "<group>";
@@ -461,6 +512,24 @@
 			path = Memory;
 			sourceTree = "<group>";
 		};
+		EC31F6AE1E3C5D55004CEF73 /* ReactNative */ = {
+			isa = PBXGroup;
+			children = (
+				EC31F6BD1E3C5D85004CEF73 /* RNTestViewController.h */,
+				EC31F6BE1E3C5D85004CEF73 /* RNTestViewController.m */,
+			);
+			path = ReactNative;
+			sourceTree = "<group>";
+		};
+		EC31F6CB1E534DB5004CEF73 /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				EC31F6DA1E534DE7004CEF73 /* TestRuntime.h */,
+				EC31F6DB1E534DE7004CEF73 /* TestRuntime.m */,
+			);
+			path = Runtime;
+			sourceTree = "<group>";
+		};
 		EC5A41181E3278B0005C6277 /* ReactNative */ = {
 			isa = PBXGroup;
 			children = (
@@ -522,6 +591,26 @@
 				EC5A41621E3288DF005C6277 /* libRCTWebSocket-tvOS.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		EC9305D91E5C009D00DF65CF /* RunLoop */ = {
+			isa = PBXGroup;
+			children = (
+				EC9305EB1E5FDAF500DF65CF /* Thread.h */,
+				EC9305EC1E5FDAF500DF65CF /* Thread.m */,
+				EC9305E81E5C00AF00DF65CF /* TestRunLoop.h */,
+				EC9305E91E5C00AF00DF65CF /* TestRunLoop.m */,
+			);
+			path = RunLoop;
+			sourceTree = "<group>";
+		};
+		EC9305EE1E5FEAC900DF65CF /* Image2Video */ = {
+			isa = PBXGroup;
+			children = (
+				EC9305EF1E5FEAEF00DF65CF /* Image2Video.h */,
+				EC9305F01E5FEAEF00DF65CF /* Image2Video.m */,
+			);
+			path = Image2Video;
 			sourceTree = "<group>";
 		};
 		EC961D371E1656F40014C7B1 /* ArchitectureMVP */ = {
@@ -792,8 +881,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC9306061E6043FD00DF65CF /* 5.tiff in Resources */,
+				EC9306041E6043FD00DF65CF /* 3.tiff in Resources */,
+				EC9306081E6043FD00DF65CF /* 7.tiff in Resources */,
+				EC9306051E6043FD00DF65CF /* 4.tiff in Resources */,
+				EC9306021E6043FD00DF65CF /* 1.tiff in Resources */,
 				EC5A41691E328FC3005C6277 /* index.ios.js in Resources */,
+				EC9306071E6043FD00DF65CF /* 6.tiff in Resources */,
 				94BFA6BD1E025B1A006AB728 /* main.js in Resources */,
+				EC9306031E6043FD00DF65CF /* 2.tiff in Resources */,
+				EC9306091E6043FD00DF65CF /* 8.tiff in Resources */,
 				94BFA6611E0169CB006AB728 /* LaunchScreen.storyboard in Resources */,
 				94BFA65E1E0169CB006AB728 /* Assets.xcassets in Resources */,
 			);
@@ -960,15 +1057,20 @@
 			files = (
 				ECAA07131E16967C00A8F927 /* MVPTestPresenter.m in Sources */,
 				ECAA07161E16970500A8F927 /* MVPTestViewController.m in Sources */,
+				EC31F6DC1E534DE7004CEF73 /* TestRuntime.m in Sources */,
 				ECAA07201E16BBAD00A8F927 /* MVVMTestViewModel.m in Sources */,
+				EC31F6BF1E3C5D85004CEF73 /* RNTestViewController.m in Sources */,
 				94BFA68A1E016E08006AB728 /* JSPatchTestRootVC.m in Sources */,
 				94BFA69E1E024740006AB728 /* YUENSwizzleMethodUtil.m in Sources */,
 				94BFA6C11E03E31C006AB728 /* TestMemoryBaseClass.m in Sources */,
 				94BFA6BB1E0249AC006AB728 /* RootTableViewCell.m in Sources */,
 				EC5A416F1E3479F0005C6277 /* ReactNative.md in Sources */,
 				94BFA6B41E024917006AB728 /* RootNavigationController.m in Sources */,
+				EC9305ED1E5FDAF500DF65CF /* Thread.m in Sources */,
 				94BFA6C41E03E613006AB728 /* TestMemoryConcreteClass.m in Sources */,
+				EC9305F11E5FEAEF00DF65CF /* Image2Video.m in Sources */,
 				94BFA69A1E0246E9006AB728 /* UIViewController+MediatorWeafRefRegister.m in Sources */,
+				EC9305EA1E5C00AF00DF65CF /* TestRunLoop.m in Sources */,
 				ECAA071A1E16B58D00A8F927 /* ArchitectureMVVMRootVC.m in Sources */,
 				ECAA071D1E16BB7C00A8F927 /* MVVMTestDataModel.m in Sources */,
 				ECAA07231E16BD4C00A8F927 /* MVVMTestViewController.m in Sources */,

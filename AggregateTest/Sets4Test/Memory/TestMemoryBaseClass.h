@@ -13,4 +13,5 @@
 //    NSInteger testInteger;
 //}
 @property (nonatomic, assign) NSInteger testInteger2;
+@property (nonatomic, assign) NSInteger testInteger3;
 @end

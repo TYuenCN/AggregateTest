@@ -9,6 +9,7 @@
 #import "YUENMediator+Root.h"
 #import "RootTableViewController.h"
 #import "RootNavigationController.h"
+#import "RNTestViewController.h"
 #import "JSPatchTestRootVC.h"
 #import "ArchitectureMVPRootVC.h"
 #import "ArchitectureMVVMRootVC.h"
@@ -100,6 +101,21 @@
     [UIApplication sharedApplication].keyWindow.rootViewController = __rootNavi;
 }
 
+
+
+
+/**
+ * 展现::ReactNative 测试页面
+ */
+- (void)presentReactNativeTestVC
+{
+    UIViewController *__vc4RootNavi = [self queryVCWithClass:[RootNavigationController class]];
+    if ([__vc4RootNavi isKindOfClass:[RootNavigationController class]]) {
+        RootNavigationController *__rootNavi = (RootNavigationController *)__vc4RootNavi;
+        RNTestViewController *__toVC = [RNTestViewController new];
+        [__rootNavi pushViewController:__toVC animated:true];
+    }
+}
 
 
 /**

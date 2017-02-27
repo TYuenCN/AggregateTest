@@ -44,7 +44,7 @@
     //
     //
     //
-    NSString *searchText = @"1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分";
+    /*NSString *searchText = @"1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分1小时25分";
     NSDictionary *__default = @{NSFontAttributeName:[UIFont systemFontOfSize:14]};
     NSMutableAttributedString *__attrStr = [[NSMutableAttributedString alloc] initWithString:searchText attributes:__default];
     
@@ -65,7 +65,7 @@
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:__lbl attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeading multiplier:1.0 constant:0.0]];
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:__lbl attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTrailing multiplier:1.0 constant:0.0]];
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:__lbl attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.p_btn attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]];
-    
+    */
 }
 
 - (void)didReceiveMemoryWarning {

@@ -23,7 +23,8 @@
     self = [super init];
     if (self) {
         self.title = @"Test";
-        self.arr4CellInfo = @[@[@"JSPatch", @"测试 JSPatch"],
+        self.arr4CellInfo = @[@[@"ReactNative", @"测试 ReactNative"],
+                              @[@"JSPatch", @"测试 JSPatch"],
                               @[@"Architecture MVP", @"测试 MVP"],
                               @[@"Architecture MVVM", @"测试 MVVM"]];
     }
@@ -57,8 +58,14 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *__cell = [tableView dequeueReusableCellWithIdentifier:@"RootTableViewCellIdentifier" forIndexPath:indexPath];
-    __cell.textLabel.text = [[self.arr4CellInfo objectAtIndex:indexPath.row] objectAtIndex:0];
-    __cell.detailTextLabel.text = [[self.arr4CellInfo objectAtIndex:indexPath.row] objectAtIndex:1];
+    if (indexPath.row < self.arr4CellInfo.count) {
+        __cell.textLabel.text = [[self.arr4CellInfo objectAtIndex:indexPath.row] objectAtIndex:0];
+        __cell.detailTextLabel.text = [[self.arr4CellInfo objectAtIndex:indexPath.row] objectAtIndex:1];
+    }
+    else{
+        __cell.textLabel.text = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
+    }
+    
     return __cell;
 }
 
@@ -71,14 +78,19 @@
     //
     //
     // Present
-    if ([[[self.arr4CellInfo objectAtIndex:indexPath.row] objectAtIndex:0] isEqualToString:@"JSPatch"]) {
-        [[YUENMediator sharedInstance] presentJSPatchTestVC];
-    }
-    else if ([[[self.arr4CellInfo objectAtIndex:indexPath.row] objectAtIndex:0] isEqualToString:@"Architecture MVP"]) {
-        [[YUENMediator sharedInstance] presentArchitectureMVP];
-    }
-    else if ([[[self.arr4CellInfo objectAtIndex:indexPath.row] objectAtIndex:0] isEqualToString:@"Architecture MVVM"]) {
-        [[YUENMediator sharedInstance] presentArchitectureMVVM];
+    if (indexPath.row < self.arr4CellInfo.count) {
+        if ([[[self.arr4CellInfo objectAtIndex:indexPath.row] objectAtIndex:0] isEqualToString:@"ReactNative"]) {
+            [[YUENMediator sharedInstance] presentReactNativeTestVC];
+        }
+        else if ([[[self.arr4CellInfo objectAtIndex:indexPath.row] objectAtIndex:0] isEqualToString:@"JSPatch"]) {
+            [[YUENMediator sharedInstance] presentJSPatchTestVC];
+        }
+        else if ([[[self.arr4CellInfo objectAtIndex:indexPath.row] objectAtIndex:0] isEqualToString:@"Architecture MVP"]) {
+            [[YUENMediator sharedInstance] presentArchitectureMVP];
+        }
+        else if ([[[self.arr4CellInfo objectAtIndex:indexPath.row] objectAtIndex:0] isEqualToString:@"Architecture MVVM"]) {
+            [[YUENMediator sharedInstance] presentArchitectureMVVM];
+        }
     }
 }
 @end
