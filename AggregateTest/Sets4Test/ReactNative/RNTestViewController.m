@@ -20,7 +20,7 @@
     NSURL *jsCodeLocation;
     jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.ios.bundle?platform=ios"];
     RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
-                                                        moduleName:@"RNHighScores"
+                                                        moduleName:@"MyTestNavi"
                                                  initialProperties:@{
                                                                      @"scores" : @[
                                                                              @{

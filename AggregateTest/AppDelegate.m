@@ -9,10 +9,9 @@
 #import "AppDelegate.h"
 #import "YUENMediator.h"
 #import <objc/runtime.h>
-#import "Image2Video.h"
+#import "TestRunLoop.h"
 
 @interface AppDelegate ()
-@property (nonatomic, strong) Image2Video *iv;
 @end
 
 @implementation AppDelegate
@@ -23,8 +22,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyAndVisible];
     [[YUENMediator sharedInstance] configureStartup];
-    self.iv = [Image2Video new];
-    [self.iv testCompressionSession];
+    
+    [TestRunLoop new];
     return YES;
 }
 

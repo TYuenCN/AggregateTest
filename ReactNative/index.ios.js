@@ -5,7 +5,9 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+  Navigator,
+  PixelRatio,
 } from 'react-native';
 
 class RNHighScores extends React.Component {
@@ -16,7 +18,7 @@ class RNHighScores extends React.Component {
     return (
       <View style={styles.container}>
         <Text style={styles.highScoresTitle}>
-          2048 High Scores!
+          2048 High Scores!\n{PixelRatio.get()}
         </Text>
         <Text style={styles.scores}>    
           {contents}
@@ -45,5 +47,20 @@ const styles = StyleSheet.create({
   },
 });
 
+
+class MyTestNavi extends React.Component
+{
+
+  renderScene(route, navigator) {
+    return <route.component navigator={navigator}  {...route.passProps} />;
+  }
+  render(){
+    console.log(this.props);
+    console.log(123123);
+    return (<Navigator initialRoute={{name: 'shouYe', component:RNHighScores, passProps:this.props}}
+                       renderScene={this.renderScene}/>);
+  }
+}
+
 // 整体js模块的名称
-AppRegistry.registerComponent('RNHighScores', () => RNHighScores);
+AppRegistry.registerComponent('MyTestNavi', () => MyTestNavi);
